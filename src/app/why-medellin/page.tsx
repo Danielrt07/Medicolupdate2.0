@@ -1,7 +1,6 @@
 import * as React from "react"
 import { WhyMedellin } from "@/components/why-medellin"
-import { Star, Award, Building2, Users, CheckCircle2, ArrowRight } from "lucide-react"
-import Image from "next/image"
+import { Star, Award, Building2, Users, ArrowRight } from "lucide-react"
 
 export const metadata = {
   title: "Why Choose Medellín for Medical Tourism | MediCol",
@@ -107,8 +106,8 @@ export default function WhyMedellinPage() {
                   <Star className="w-5 h-5 text-yellow-400" />
                 </div>
                 <p className="text-gray-600 mb-4">
-                  "The quality of care I received in Medellín was exceptional. The doctors were highly skilled,
-                  and the support staff made me feel at home throughout my recovery."
+                  &ldquo;The quality of care I received in Medellín was exceptional. The doctors were highly skilled,
+                  and the support staff made me feel at home throughout my recovery.&rdquo;
                 </p>
                 <div className="font-medium">Sarah M.</div>
                 <div className="text-sm text-gray-500">from United States</div>
@@ -122,8 +121,8 @@ export default function WhyMedellinPage() {
                   <Star className="w-5 h-5 text-yellow-400" />
                 </div>
                 <p className="text-gray-600 mb-4">
-                  "Not only did I save significantly on my procedure, but the entire experience exceeded
-                  my expectations. The city's perfect climate made recovery so much easier."
+                  &ldquo;Not only did I save significantly on my procedure, but the entire experience exceeded
+                  my expectations. The city&apos;s perfect climate made recovery so much easier.&rdquo;
                 </p>
                 <div className="font-medium">Michael R.</div>
                 <div className="text-sm text-gray-500">from Canada</div>
@@ -137,8 +136,8 @@ export default function WhyMedellinPage() {
                   <Star className="w-5 h-5 text-yellow-400" />
                 </div>
                 <p className="text-gray-600 mb-4">
-                  "The medical facilities in Medellín are world-class. I was impressed by the technology
-                  and the personalized attention I received throughout my stay."
+                  &ldquo;The medical facilities in Medellín are world-class. I was impressed by the technology
+                  and the personalized attention I received throughout my stay.&rdquo;
                 </p>
                 <div className="font-medium">Emma L.</div>
                 <div className="text-sm text-gray-500">from United Kingdom</div>
