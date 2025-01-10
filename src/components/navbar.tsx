@@ -53,6 +53,9 @@ const Navbar = () => {
             <Link href="/pricing" className="hover:text-primary transition-colors">
               Pricing Comparison
             </Link>
+            <Link href="/blog" className="hover:text-primary transition-colors">
+              Blog
+            </Link>
             <Link href="/contact" className="hover:text-primary transition-colors">
               Contact
             </Link>
@@ -115,6 +118,13 @@ const Navbar = () => {
             onClick={closeMenu}
           >
             Pricing Comparison
+          </Link>
+          <Link 
+            href="/blog" 
+            className="text-lg py-2 hover:text-primary transition-colors"
+            onClick={closeMenu}
+          >
+            Blog
           </Link>
           <Link 
             href="/contact" 
