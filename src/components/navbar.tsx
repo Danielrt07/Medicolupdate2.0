@@ -16,6 +16,9 @@ const Navbar = () => {
           <Link href="/treatments" className="hover:text-primary">
             Treatments
           </Link>
+          <Link href="/patient-journey" className="hover:text-primary">
+            Patient Journey
+          </Link>
           <Link href="/about" className="hover:text-primary">
             About Us
           </Link>

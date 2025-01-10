@@ -9,9 +9,14 @@ export function HeroSection() {
   return (
     <section className="relative h-screen flex items-center">
       <div className="absolute inset-0 z-0">
-        <div className="relative w-full h-full bg-black">
-          <div className="absolute inset-0 bg-gradient-to-r from-black/60 to-black/30 z-10" />
-        </div>
+        <Image
+          src="/hero/medellin.gif"
+          alt="Medellin cityscape"
+          fill
+          className="object-cover"
+          priority
+        />
+        <div className="absolute inset-0 bg-gradient-to-r from-black/60 to-black/30 z-10" />
       </div>
       
       <div className="container mx-auto px-4 relative z-10">
@@ -24,14 +29,14 @@ export function HeroSection() {
             5-star experience at up to 70% less than Western prices.
           </p>
           <div className="flex gap-4">
-            <Link href="/treatments/plastic-surgery">
+            <Link href="/treatments">
               <Button size="lg" variant="default" className="text-lg">
                 Explore Treatments
               </Button>
             </Link>
-            <Link href="#price-comparison">
-              <Button size="lg" variant="outline" className="text-lg text-white border-white hover:bg-white/10">
-                View Price Comparison
+            <Link href="/patient-journey">
+              <Button size="lg" variant="outline" className="text-lg bg-transparent text-white border-white hover:bg-white hover:text-black transition-colors">
+                How it Works
               </Button>
             </Link>
           </div>
