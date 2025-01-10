@@ -7,23 +7,23 @@ export function TrustIndicators() {
   const indicators = [
     {
       icon: Shield,
-      title: "Licensed & Certified",
-      description: "All our medical professionals are fully licensed and internationally certified"
+      title: "Vetted Partners",
+      description: "We partner with fully licensed and internationally certified medical professionals"
     },
     {
       icon: Award,
-      title: "JCI Accredited",
-      description: "Our facilities meet the highest international healthcare standards"
+      title: "Quality Assured",
+      description: "We work exclusively with JCI-accredited facilities and top-rated clinics"
     },
     {
       icon: Star,
-      title: "5-Star Experience",
-      description: "Luxury accommodations and personalized care throughout your stay"
+      title: "Premium Service",
+      description: "Concierge assistance, luxury accommodations, and end-to-end support"
     },
     {
       icon: Users,
-      title: "1000+ Patients",
-      description: "Successfully treated patients from over 30 countries"
+      title: "1000+ Connections",
+      description: "Successfully facilitated medical travel for patients from over 30 countries"
     }
   ]
 

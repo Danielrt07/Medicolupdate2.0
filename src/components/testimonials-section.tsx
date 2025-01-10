@@ -9,21 +9,18 @@ export function TestimonialsSection() {
     {
       name: "Sarah Johnson",
       location: "United States",
-      image: "/images/testimonial-1.jpg",
       text: "The care and attention I received was exceptional. From the luxury accommodations to the skilled medical team, everything exceeded my expectations.",
       procedure: "Breast Augmentation"
     },
     {
       name: "Michael Chen",
       location: "Canada",
-      image: "/images/testimonial-2.jpg",
       text: "The stem cell therapy results were amazing. The facilities are world-class and the staff made me feel comfortable throughout the entire process.",
       procedure: "Stem Cell Therapy"
     },
     {
       name: "Emma Thompson",
       location: "United Kingdom",
-      image: "/images/testimonial-3.jpg",
       text: "I saved thousands on my dental work without compromising on quality. The clinic is beautiful and the results are perfect.",
       procedure: "Full Mouth Reconstruction"
     }
@@ -37,9 +34,9 @@ export function TestimonialsSection() {
           {testimonials.map((testimonial) => (
             <div key={testimonial.name} className="bg-white p-6 rounded-lg shadow-md">
               <div className="flex items-center gap-4 mb-4">
-                <div className="relative w-16 h-16 rounded-full overflow-hidden">
+                <div className="relative w-16 h-16 rounded-full overflow-hidden bg-gray-100">
                   <Image
-                    src={testimonial.image}
+                    src="/patient-placeholder.svg"
                     alt={testimonial.name}
                     fill
                     className="object-cover"
