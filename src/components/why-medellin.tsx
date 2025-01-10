@@ -2,7 +2,6 @@
 
 import * as React from "react"
 import { Plane, Building2, Heart, Coins, Sun, Mountain, GraduationCap, Clock } from "lucide-react"
-import Image from "next/image"
 
 export function WhyMedellin() {
   const mainReasons = [
