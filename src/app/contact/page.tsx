@@ -221,7 +221,7 @@ export default function ContactPage() {
             <div className="bg-white p-6 rounded-lg shadow-md">
               <h3 className="text-xl font-bold mb-3">How long should I stay in Medellín?</h3>
               <p className="text-gray-600">
-                The recommended stay varies by procedure. We'll provide a detailed 
+                The recommended stay varies by procedure. We&apos;ll provide a detailed 
                 timeline during your consultation.
               </p>
             </div>

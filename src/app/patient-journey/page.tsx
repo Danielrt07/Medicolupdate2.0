@@ -3,7 +3,6 @@
 import * as React from "react"
 import { Button } from "@/components/ui/button"
 import { 
-  Calendar, 
   Plane, 
   VideoIcon, 
   ClipboardCheck, 
@@ -194,7 +193,7 @@ export default function PatientJourneyPage() {
           </h1>
           <p className="text-xl md:text-2xl text-gray-600 max-w-3xl">
             A seamless experience from your first consultation to your final follow-up. 
-            We're with you every step of the way.
+            We&apos;re with you every step of the way.
           </p>
         </div>
       </section>

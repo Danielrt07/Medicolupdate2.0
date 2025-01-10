@@ -218,7 +218,7 @@ export default function PricingPage() {
             <div className="bg-white p-6 rounded-lg shadow-md">
               <h3 className="text-xl font-bold mb-3">Lower Operating Costs</h3>
               <p className="text-gray-600">
-                Colombia's lower cost of living and operational expenses allow us to offer 
+                Colombia&apos;s lower cost of living and operational expenses allow us to offer 
                 premium care at significantly reduced prices.
               </p>
             </div>
@@ -232,7 +232,7 @@ export default function PricingPage() {
             <div className="bg-white p-6 rounded-lg shadow-md">
               <h3 className="text-xl font-bold mb-3">Government Support</h3>
               <p className="text-gray-600">
-                Colombia's investment in medical tourism infrastructure helps maintain 
+                Colombia&apos;s investment in medical tourism infrastructure helps maintain 
                 competitive pricing while ensuring high standards.
               </p>
             </div>
@@ -243,7 +243,7 @@ export default function PricingPage() {
       {/* What's Included */}
       <section className="py-20">
         <div className="container mx-auto px-4">
-          <h2 className="text-3xl font-playfair mb-12 text-center">What's Included</h2>
+          <h2 className="text-3xl font-playfair mb-12 text-center">What&apos;s Included</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
             <div className="bg-white p-6 rounded-lg shadow-md">
               <h3 className="text-xl font-bold mb-3">All-Inclusive Packages</h3>
