@@ -1,7 +1,7 @@
 "use client"
 
 import * as React from "react"
-import { Shield, Award, Star, Users, CheckCircle2, Globe } from "lucide-react"
+import { Shield, Award, Star, Globe } from "lucide-react"
 
 export function TrustIndicators() {
   const indicators = [

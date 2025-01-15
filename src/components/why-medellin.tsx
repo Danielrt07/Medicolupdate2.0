@@ -1,7 +1,7 @@
 "use client"
 
 import * as React from "react"
-import { Building2, Heart, Coins, Sun, Mountain, GraduationCap, Clock, CheckCircle } from "lucide-react"
+import { Building2, Heart, Coins, Sun, Mountain, GraduationCap, CheckCircle } from "lucide-react"
 
 export function WhyMedellin() {
   const mainReasons = [
