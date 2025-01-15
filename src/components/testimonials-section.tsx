@@ -1,63 +1,101 @@
 "use client"
 
 import * as React from "react"
-import Image from "next/image"
-import { Star } from "lucide-react"
+import { Star, Quote } from "lucide-react"
 
 export function TestimonialsSection() {
   const testimonials = [
     {
-      name: "Sarah Johnson",
+      name: "Sarah Mitchell",
       location: "United States",
-      text: "The care and attention I received was exceptional. From the luxury accommodations to the skilled medical team, everything exceeded my expectations.",
-      procedure: "Breast Augmentation"
+      image: "/images/patient-placeholder.svg",
+      procedure: "Facial Rejuvenation",
+      quote: "The level of care and attention I received was exceptional. From the initial consultation to post-operative care, every detail was handled with utmost professionalism.",
+      rating: 5
     },
     {
-      name: "Michael Chen",
+      name: "David Thompson",
       location: "Canada",
-      text: "The stem cell therapy results were amazing. The facilities are world-class and the staff made me feel comfortable throughout the entire process.",
-      procedure: "Stem Cell Therapy"
+      image: "/images/patient-placeholder.svg",
+      procedure: "Stem Cell Therapy",
+      quote: "Not only did I save significantly on costs, but the medical facilities and staff expertise in Medellín exceeded my expectations. A truly premium experience.",
+      rating: 5
     },
     {
-      name: "Emma Thompson",
+      name: "Emma Wilson",
       location: "United Kingdom",
-      text: "I saved thousands on my dental work without compromising on quality. The clinic is beautiful and the results are perfect.",
-      procedure: "Full Mouth Reconstruction"
+      image: "/images/patient-placeholder.svg",
+      procedure: "Dental Reconstruction",
+      quote: "The combination of world-class medical care and the beautiful healing environment of Medellín made my recovery smooth and comfortable.",
+      rating: 5
     }
   ]
 
   return (
-    <section className="py-20 bg-gray-50">
-      <div className="container mx-auto px-4">
-        <h2 className="text-4xl font-playfair text-center mb-12">Patient Stories</h2>
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-          {testimonials.map((testimonial) => (
-            <div key={testimonial.name} className="bg-white p-6 rounded-lg shadow-md">
-              <div className="flex items-center gap-4 mb-4">
-                <div className="relative w-16 h-16 rounded-full overflow-hidden bg-gray-100">
-                  <Image
-                    src="/patient-placeholder.svg"
-                    alt={testimonial.name}
-                    fill
-                    className="object-cover"
-                  />
-                </div>
-                <div>
-                  <h3 className="font-bold">{testimonial.name}</h3>
-                  <p className="text-sm text-gray-600">{testimonial.location}</p>
-                </div>
+    <div className="container mx-auto px-4">
+      <div className="text-center max-w-3xl mx-auto mb-16">
+        <h2 className="font-playfair text-3xl md:text-4xl mb-6">
+          Patient Success Stories
+        </h2>
+        <p className="text-gray-600 text-lg">
+          Discover why patients from around the world choose Medellín for their medical procedures.
+        </p>
+      </div>
+
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+        {testimonials.map((testimonial) => (
+          <div 
+            key={testimonial.name}
+            className="bg-white rounded-xl p-8 shadow-sm hover:shadow-md transition-all relative border border-[#60A5FA]/10"
+          >
+            <Quote className="absolute top-6 right-6 w-8 h-8 text-[#60A5FA]/20" />
+            
+            <div className="flex items-center gap-4 mb-6">
+              <div className="w-16 h-16 rounded-full bg-gray-100 overflow-hidden relative">
+                <div 
+                  className="absolute inset-0 bg-cover bg-center"
+                  style={{ backgroundImage: `url(${testimonial.image})` }}
+                />
               </div>
-              <div className="flex gap-1 mb-4">
-                {[...Array(5)].map((_, i) => (
-                  <Star key={i} className="w-5 h-5 fill-yellow-400 text-yellow-400" />
-                ))}
+              <div>
+                <div className="font-bold">{testimonial.name}</div>
+                <div className="text-sm text-gray-600">{testimonial.location}</div>
+                <div className="text-sm text-[#2563EB] mt-1">{testimonial.procedure}</div>
               </div>
-              <p className="text-gray-600 mb-4">{testimonial.text}</p>
-              <p className="text-sm font-medium text-primary">{testimonial.procedure}</p>
             </div>
-          ))}
+
+            <div className="flex items-center gap-1 mb-4">
+              {[...Array(testimonial.rating)].map((_, i) => (
+                <Star key={i} className="w-4 h-4 text-[#FBBF24] fill-current" />
+              ))}
+            </div>
+
+            <blockquote className="text-gray-600">
+              &ldquo;{testimonial.quote}&rdquo;
+            </blockquote>
+          </div>
+        ))}
+      </div>
+
+      {/* Trust Stats */}
+      <div className="mt-16 pt-16 border-t grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+        <div>
+          <div className="text-3xl font-bold text-[#2563EB] mb-2">2,500+</div>
+          <div className="text-gray-600">Successful Procedures</div>
+        </div>
+        <div>
+          <div className="text-3xl font-bold text-[#2563EB] mb-2">30+</div>
+          <div className="text-gray-600">Countries Served</div>
+        </div>
+        <div>
+          <div className="text-3xl font-bold text-[#2563EB] mb-2">98%</div>
+          <div className="text-gray-600">Patient Satisfaction</div>
+        </div>
+        <div>
+          <div className="text-3xl font-bold text-[#2563EB] mb-2">15+</div>
+          <div className="text-gray-600">Years Experience</div>
         </div>
       </div>
-    </section>
+    </div>
   )
 } 

@@ -18,7 +18,7 @@ export default function WhyMedellinPage() {
           <div className="relative container mx-auto px-4 h-full flex items-center">
             <div className="max-w-3xl">
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-playfair text-white mb-6">
-                Why Choose Medellín for Your Medical Journey?
+                Why Medellín?
               </h1>
               <p className="text-xl md:text-2xl text-white/90">
                 Experience world-class healthcare in the City of Eternal Spring, where modern medical 
