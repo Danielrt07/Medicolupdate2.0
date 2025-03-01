@@ -9,54 +9,124 @@ export const metadata = {
 export default function DentalPage() {
   const procedures = [
     {
-      name: "Same-Day Dental Implants",
-      description: "Advanced immediate-load implants using 3D-guided placement technology",
-      price: "Starting from $2,000 per implant"
+      name: "Smile Design (Diseño)",
+      description: "Complete smile design planning and visualization",
+      price: "$850 | US Price: $2,500+"
     },
     {
-      name: "Full Mouth Reconstruction",
-      description: "Complete smile transformation using AI-designed treatment planning",
-      price: "Starting from $15,000"
+      name: "Upper Arch Design (Diseño superior)",
+      description: "Customized design for upper teeth",
+      price: "$625 | US Price: $1,800+"
     },
     {
-      name: "Digital Smile Design",
-      description: "AI-powered smile visualization and treatment planning for perfect results",
-      price: "Starting from $500"
+      name: "Micro Design (Micro diseño)",
+      description: "Precise micro adjustments for perfect aesthetics",
+      price: "$500 | US Price: $1,500+"
     },
     {
-      name: "All-on-4 Implants",
-      description: "Full arch replacement using computer-guided implant placement",
-      price: "Starting from $12,000"
+      name: "Small Resin Repair",
+      description: "Minor composite resin repairs and adjustments",
+      price: "$37.50 | US Price: $150-200"
     },
     {
-      name: "Zirconia Crowns",
-      description: "Premium metal-free crowns with superior aesthetics and durability",
-      price: "Starting from $800 per crown"
+      name: "Complete Veneer (Carilla completa)",
+      description: "Full dental veneer application",
+      price: "$75 | US Price: $800-2,000"
     },
     {
-      name: "Porcelain Veneers",
-      description: "Ultra-thin custom veneers designed with 3D imaging for natural appearance",
-      price: "Starting from $600 per tooth"
+      name: "Laser Teeth Whitening",
+      description: "Advanced laser whitening treatment",
+      price: "$300 | US Price: $1,000+"
     },
     {
-      name: "Invisible Aligners",
-      description: "Custom clear aligners with AI-optimized treatment progression",
-      price: "Starting from $3,500"
+      name: "Custom Whitening Trays",
+      description: "Professional take-home whitening kit",
+      price: "$200 | US Price: $400-600"
     },
     {
-      name: "Laser Gum Contouring",
-      description: "Precise gum reshaping using advanced laser technology",
-      price: "Starting from $800"
+      name: "Protective Guard",
+      description: "Custom-made dental protection",
+      price: "$62.50 | US Price: $300-500"
     },
     {
-      name: "3D-Printed Restorations",
-      description: "Same-day custom dental restorations using latest 3D printing technology",
-      price: "Starting from $500 per tooth"
+      name: "Botox for Bruxism",
+      description: "TMJ and teeth grinding treatment",
+      price: "$500 | US Price: $1,000-1,500"
     },
     {
-      name: "Teeth Whitening",
-      description: "Advanced LED-accelerated professional whitening system",
-      price: "Starting from $400"
+      name: "Orthodontic Setup",
+      description: "Initial orthodontic treatment setup",
+      price: "$175 | US Price: $500-800"
+    },
+    {
+      name: "Single Root Canal",
+      description: "Endodontic treatment for single-rooted teeth",
+      price: "$300 | US Price: $1,000-1,500"
+    },
+    {
+      name: "Multi-Root Canal",
+      description: "Complex endodontic treatment",
+      price: "$375 | US Price: $1,200-1,800"
+    },
+    {
+      name: "Basic Denture",
+      description: "Standard removable prosthetic",
+      price: "$375 | US Price: $1,500-3,000"
+    },
+    {
+      name: "High-Impact Denture",
+      description: "Premium quality durable denture",
+      price: "$625 | US Price: $2,000-4,000"
+    },
+    {
+      name: "Dental Implants",
+      description: "Titanium implant with restoration",
+      price: "$750 - $1,500 | US Price: $3,000-4,500"
+    },
+    {
+      name: "Dental Crowns",
+      description: "Custom-fitted dental crown",
+      price: "$625 | US Price: $1,200-2,000"
+    },
+    {
+      name: "Zirconia Crown",
+      description: "Premium metal-free zirconia restoration",
+      price: "$700 | US Price: $1,500-2,500"
+    },
+    {
+      name: "Inlay/Onlay",
+      description: "Custom ceramic restoration",
+      price: "$500 | US Price: $1,000-1,500"
+    },
+    {
+      name: "Temporary Crown",
+      description: "Provisional crown protection",
+      price: "$175 | US Price: $400-800"
+    },
+    {
+      name: "Post and Core",
+      description: "Dental post for crown support",
+      price: "$175 | US Price: $500-900"
+    },
+    {
+      name: "Night Guard",
+      description: "Custom-made night protection",
+      price: "$300 | US Price: $500-1,000"
+    },
+    {
+      name: "Ceramic Veneer",
+      description: "Premium ceramic dental veneer",
+      price: "$500 | US Price: $1,500-2,500"
+    },
+    {
+      name: "Professional Cleaning",
+      description: "Deep cleaning and polishing",
+      price: "$62.50 | US Price: $100-300"
+    },
+    {
+      name: "Deep Scaling",
+      description: "Advanced periodontal cleaning",
+      price: "$125 | US Price: $200-400"
     }
   ]
 
